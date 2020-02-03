@@ -1,0 +1,42 @@
+@import "../helpers/extends";
+@import "../helpers/mixin";
+@import "../helpers/variables";
+
+.header {
+    color: $header-color;
+    justify-content: space-between;
+    padding: 2rem 0;
+    @extend %disable-select;
+
+    &-section {
+        @extend %hw-center-elements;
+    }
+
+    &-info {
+        align-items: center;
+        display: flex;
+        font-size: 1.5rem;
+        height: 100%;
+        justify-content: space-between;
+        width: 18rem;
+
+        &__link {
+            color: inherit;
+        }
+
+        &__link:hover {
+            color: inherit;
+        }
+    }
+
+    &-title {
+        &__h1 {
+            @include title-headings(3rem, 1px);
+        }
+
+        &__h2 {
+            @include title-headings(2rem, 3px);
+        }
+    }
+
+}

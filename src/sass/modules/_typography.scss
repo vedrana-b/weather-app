@@ -1,0 +1,15 @@
+// Main typography file
+// Uses font-face mixin
+@font-face {
+    font-family: 'poppinslight';
+    src: url('../../src/fonts/poppins-light-webfont.woff2') format('woff2'),
+         url('../../src/fonts/poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.body-container {
+    font-family: 'poppinslight';
+}

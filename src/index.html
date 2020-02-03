@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Forecast</title>
+    <!-- foundation .css-->
+    <link href="../dist/css/foundation.css" rel="stylesheet" type="text/css">
+    <!-- style .css-->
+    <link href="../dist/css/style.css" rel="stylesheet" type="text/css">
+    <!-- font-awesome .css-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="grid-container grid-form full body-container large-12 medium-12">
+        <header class="grid-x header">
+            <section class="cell header-section large-4 medium-4 small-12">
+                <div class="header-title">
+                    <h1 class="header-title__h1"> Happy</h1>
+                    <h2 class="header-title__h2"> Weather </h2>
+                </div>
+            </section>
+            <section class="cell header-section large-4 large-offset-4 medium-4 header-info">
+                <div class="header-info">
+                    <a class="header-info__link">
+                        <h5>About us</h5>
+                    </a>
+                    <a class="header-info__link">
+                        <h5>Contact us</h5>
+                    </a>
+                </div>
+            </section>
+        </header>
+        <main class="main">
+            <!-- Block with search input -->
+            <section class="main-search__container grid-x">
+                <div class="search">
+                    <div class="grid-x search-label">
+                        <h1 class="search-label__heading">
+                            Where Are You Going ?
+                        </h1>
+                    </div>
+                    <div class="grid-x">
+                        <input class="search-input js-search-input" type="text" placeholder="Enter Your Destination ...">
+                        <button class="search-button js-search-button">
+                            <i class="fas fa-search search-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Block with current temperature and city-->
+            <section class="accu-temp large-12 medium-12 small-12 grid-x">
+                <div class="accu-temp__container grid-x">
+                    <div class="accu-temp__icon cell large-2 medium-2 small-3">
+                        <img class="temp__icon" src="http://openweathermap.org/img/w/10d.png">
+                    </div>
+                    <div class="accu-temp__block cell large-8 medium-8 small-12">
+                        <h2 class="accu-temp__city"> </h2>
+                        <h5 class="accu-temp__desc"></h5>
+                        <h1 class="accu-temp__degrees"> </h1>
+                        <div class="accu-details">
+                            <div class="grid-x accu-details__max">
+                                <div class="grid-x accu-details__padding-r">
+                                    <h6>Max temperature</h6>
+                                    <span class="max-temp accu-value"></span>
+                                </div>
+                                <div class="grid-x">
+                                    <h6>Min temperature</h6>
+                                    <span class="min-temp accu-value"></span>
+                                </div>
+                            </div>
+                            <div class="grid-x">
+                                <div class="grid-x accu-details__padding-r">
+                                    <h6>Wind</h6>
+                                    <span class="wind accu-value"></span>
+                                </div>
+                                <div class="grid-x">
+                                    <h6>Humidity</h6>
+                                    <span class="humidity accu-value"> </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="daily-forecast cell large-2 medium-2 small-12">
+                        <aside class="daily-forecast__el day">
+                            <img class="daily-icon__2">
+                            <h6 class="day__2"></h6>
+                        </aside>
+                        <aside class="daily-forecast__el day">
+                            <img class="daily-icon__3">
+                            <h6 class="day__3"></h6>
+                        </aside>
+                        <aside class="day">
+                            <img class="daily-icon__4">
+                            <h6 class="day__4"></h6>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="jquery/ajax.js"></script>
+    <script src="jquery/file.js"></script>
+    <script src="../node_modules/foundation-sites/dist/js/foundation.js"></script>
+</body>
+
+</html>

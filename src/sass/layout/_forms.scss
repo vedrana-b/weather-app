@@ -1,0 +1,38 @@
+.search {
+    @extend %disable-select;
+    &-input {
+        border-radius: 50em 0 0 50em;
+        background: $input-button-background;
+        border: none;
+        height: 6rem;
+        margin-bottom: 0;
+        width: 55rem;
+    }
+
+    &-input:placeholder-shown {
+        font-size: 2rem;
+        padding-left: 30px;
+      //  color:#c6cbd363;
+    }
+    &-input::placeholder {
+        color: rgb(41, 46, 56);
+    }
+    &-input:focus::placeholder {
+        color: transparent;
+    }
+
+    input:focus {
+        font-size: 2rem;
+        padding-left: 30px;
+        border: none;
+    }
+
+    &-label {
+        margin: 0 0 20px 30px;
+
+        &__heading {
+            color:  $labelsFontColor;
+            font-size: 1.5rem;
+        }
+    }
+}

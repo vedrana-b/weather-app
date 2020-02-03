@@ -1,0 +1,15 @@
+.dropdown-menu {
+    height: 300px;
+    color: white;
+    justify-content: center;
+    &__container {
+        padding: 10px 0px;
+        width: 50rem;
+        background: #fefefe26;
+    }
+
+    &__item {
+        background: #fefefe42;
+        padding: 5px 30px;
+    }
+}

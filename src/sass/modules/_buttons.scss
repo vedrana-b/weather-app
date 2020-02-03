@@ -1,0 +1,32 @@
+.search-button {
+    height: 6rem;
+    width: 6rem;
+    background: rgba(164, 172, 177, 0.38823529411764707);
+    border-radius: 0 50em 50em 0;
+    box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0);
+}
+
+.search-button:focus {
+    outline: none;
+}
+
+.fa-search {
+    cursor: pointer;
+    font-size: 3rem;
+
+
+}
+
+.fa-search::before {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+}
+
+.search-icon {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+}

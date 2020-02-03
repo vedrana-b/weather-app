@@ -1,0 +1,247 @@
+.header-section, .main-search__container, .main .accu-temp, .main .accu-temp__container {
+  align-items: center;
+  display: flex;
+  justify-content: center; }
+
+.search, .header, .main .daily-forecast {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.body-container {
+  background: url("../../src/img/astronomy-backlit.jpg");
+  background-size: cover;
+  height: 100vh; }
+
+.dropdown-menu {
+  height: 300px;
+  color: white;
+  justify-content: center; }
+  .dropdown-menu__container {
+    padding: 10px 0px;
+    width: 50rem;
+    background: #fefefe26; }
+  .dropdown-menu__item {
+    background: #fefefe42;
+    padding: 5px 30px; }
+
+.search-input {
+  border-radius: 50em 0 0 50em;
+  background: rgba(164, 172, 177, 0.388235);
+  border: none;
+  height: 6rem;
+  margin-bottom: 0;
+  width: 55rem; }
+
+.search-input:placeholder-shown {
+  font-size: 2rem;
+  padding-left: 30px; }
+
+.search-input::placeholder {
+  color: #292e38; }
+
+.search-input:focus::placeholder {
+  color: transparent; }
+
+.search input:focus {
+  font-size: 2rem;
+  padding-left: 30px;
+  border: none; }
+
+.search-label {
+  margin: 0 0 20px 30px; }
+  .search-label__heading {
+    color: #DCDCDC;
+    font-size: 1.5rem; }
+
+.header-section, .main-search__container, .main .accu-temp, .main .accu-temp__container {
+  align-items: center;
+  display: flex;
+  justify-content: center; }
+
+.search, .header, .main .daily-forecast {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.header {
+  color: #ECBE9A;
+  justify-content: space-between;
+  padding: 2rem 0; }
+  .header-info {
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    height: 100%;
+    justify-content: space-between;
+    width: 18rem; }
+    .header-info__link {
+      color: inherit; }
+    .header-info__link:hover {
+      color: inherit; }
+  .header-title__h1 {
+    font-size: 3rem;
+    letter-spacing: 1px; }
+  .header-title__h2 {
+    font-size: 2rem;
+    letter-spacing: 3px; }
+
+.main {
+  margin-top: 100px;
+  display: none; }
+  .main .accu-temp__container {
+    background: rgba(40, 44, 46, 0.388235);
+    border-radius: 1em;
+    margin-top: 20px;
+    width: 50rem; }
+  .main .accu-temp__icon img {
+    width: 200px; }
+  .main .accu-temp__block {
+    border-left: 1px solid rgba(0, 0, 0, 0.388235);
+    color: #fff;
+    padding-left: 20px; }
+  .main .accu-temp__city {
+    font-size: 2rem;
+    padding-bottom: 10px; }
+  .main .accu-temp__desc {
+    padding-bottom: 1rem;
+    font-size: 1.5rem; }
+  .main .accu-temp__degrees {
+    font-size: 4rem; }
+  .main .accu-details__max {
+    padding: 10px 0; }
+  .main .accu-details__padding-r {
+    padding-right: 20px; }
+  .main .accu-value {
+    padding-left: 5px; }
+  .main .daily-forecast {
+    background: rgba(40, 44, 46, 0.388235);
+    border-radius: 0 1em 1em 0;
+    color: #DCDCDC;
+    text-align: center; }
+    .main .daily-forecast__el {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.388235); }
+    .main .daily-forecast aside {
+      padding-bottom: 10px; }
+
+.search-button {
+  height: 6rem;
+  width: 6rem;
+  background: rgba(164, 172, 177, 0.388235);
+  border-radius: 0 50em 50em 0;
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0); }
+
+.search-button:focus {
+  outline: none; }
+
+.fa-search {
+  cursor: pointer;
+  font-size: 3rem; }
+
+.fa-search::before {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  align-items: center; }
+
+.search-icon {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 3rem; }
+
+@media only screen and (max-width: 1100px) {
+  .search-input {
+    height: 4rem;
+    width: 30rem; }
+  .search-button {
+    height: 4rem; }
+  .main .accu-temp__container {
+    width: 37rem; }
+  .header {
+    padding: 2rem 1rem; } }
+
+@media only screen and (max-width: 640px) {
+  .body-container {
+    height: 100%; }
+  .header-info {
+    display: none; }
+  .main {
+    margin-top: 0; } }
+
+@media only screen and (max-width: 560px) {
+  .fa-search {
+    font-size: 1rem; }
+  .header-info {
+    display: none; }
+  .search-input:placeholder-shown {
+    font-size: 1rem; }
+  .search-input {
+    width: 14rem;
+    height: 3rem; }
+  .search-button {
+    height: 3rem; }
+  .search-label {
+    margin: 0 0 10px 0; } }
+
+@font-face {
+  font-family: 'poppinslight';
+  src: url("../../src/fonts/poppins-light-webfont.woff2") format("woff2"), url("../../src/fonts/poppins-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.body-container {
+  font-family: 'poppinslight'; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v4.0 | 20180602
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block; }
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }

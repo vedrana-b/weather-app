@@ -1,0 +1,79 @@
+.main {
+    margin-top: 100px;
+    display: none;
+
+    &-search__container {
+        @extend %hw-center-elements;
+    }
+
+    .accu-temp {
+        @extend %hw-center-elements;
+
+        &__container {
+            @extend %hw-center-elements;
+            background: $daily-forecast-background;
+            border-radius: 1em;
+            margin-top: 20px;
+            width: 50rem;
+        }
+
+        &__icon {
+            img {
+                width: 200px;
+            }
+        }
+
+        &__block {
+            border-left: 1px solid $daily-forecast-border;
+            color: $accu-temperature-font-color;
+            padding-left: 20px;
+        }
+
+        &__city {
+            font-size: 2rem;
+            padding-bottom: 10px;
+        }
+
+        &__desc {
+            padding-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        &__degrees {
+            font-size: 4rem;
+        }
+    }
+
+    .accu-details {
+        &__max {
+            padding: 10px 0;
+        }
+
+        &__padding-r {
+            padding-right: 20px;
+        }
+    }
+
+    .accu-value {
+        padding-left: 5px;
+    }
+
+    .daily-forecast {
+        @extend %disable-select;
+        background: $wa-transparent-darken;
+        border-radius: 0 1em 1em 0;
+        color: $labelsFontColor;
+        text-align: center;
+
+
+        &__el {
+            border-bottom: 1px solid $daily-forecast-border;
+        }
+
+        aside {
+            padding-bottom: 10px;
+        }
+
+    }
+
+}

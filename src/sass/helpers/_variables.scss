@@ -1,0 +1,16 @@
+//Colors
+$wa-rose: #ECBE9A;
+$wa-transparent: rgba(164, 172, 177, 0.38823529411764707);
+$wa-transparent-darken: darken($wa-transparent, 50%);
+$wa-transparent-dark: darken($wa-transparent, 90%);
+$wa-white: #fff;
+$wa-light-gray: #DCDCDC;
+// Font colors
+
+$header-color:$wa-rose;
+$input-button-background: $wa-transparent;
+$daily-forecast-background: $wa-transparent-darken;
+$daily-forecast-border: $wa-transparent-dark;
+$accu-temperature-font-color: $wa-white;
+$labelsFontColor: $wa-light-gray;
+//Font settings

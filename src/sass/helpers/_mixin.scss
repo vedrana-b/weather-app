@@ -1,0 +1,6 @@
+@mixin title-headings ($font-size, $letter-spacing) {
+    font-size: $font-size;
+    letter-spacing: $letter-spacing;
+}
+
+
